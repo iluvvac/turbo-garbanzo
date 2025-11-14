@@ -51,9 +51,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <nav className="bg-background sticky top-0 z-50 shadow-md">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          
           <div className="flex items-center text-2xl font-bold text-primary">
-          {/* <img
+            {/* <img
             src={logo || "/placeholder.svg"}
             alt=""
             className="w-16"
@@ -431,13 +430,9 @@ const Index = () => {
                       Dari Nol Menjadi Brand
                     </h3>
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      Makmur Baru Global hadir untuk menjawab kebingungan ini.
-                      Kami spesialis membantu orang seperti kamu yang baru
-                      pengin coba bisnis tapi dengan modal kecil. Nggak perlu
-                      sewa pabrik, nggak perlu order ribuan barang. Cukup 500
-                      pcs, kami yang urus semuanya dari konsultasi, formula,
-                      sampel, sampai legalitas BPOM. Kamu tinggal fokus jualan
-                      aja.
+                      Mulai bisnis tanpa pabrik, tanpa ribuan order. Makmur Baru
+                      Global urus semuanya dari formula hingga BPOM. Kamu
+                      tinggal jualan.
                     </p>
                   </div>
                   <div className="md:order-1">
@@ -566,6 +561,110 @@ const Index = () => {
                 Mulai Perjalanan Sukses Saya Sekarang!
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Packages Section */}
+      <section className="py-16 md:py-20 bg-secondary/20" id="packages">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-4 mb-12">
+            <Badge className="bg-accent/20 text-accent-foreground border-accent/40">
+              📦 Layanan Kami
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Paket <span className="text-primary">Lengkap & Fleksibel</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Pilih layanan sesuai kebutuhan bisnis Anda
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[
+              {
+                title: "Paket Starter",
+                description:
+                  "Cocok untuk pemula yang baru memulai bisnis kosmetik",
+                features: [
+                  "MOQ 500 pcs",
+                  "1 Jenis produk",
+                  "Konsultasi formula",
+                  "Sample gratis",
+                  "Kemasan basic",
+                ],
+              },
+              {
+                title: "Paket Professional",
+                description: "Untuk brand yang ingin berkembang lebih cepat",
+                features: [
+                  "MOQ 1000 pcs",
+                  "2-3 Jenis produk",
+                  "Custom formula",
+                  "Desain kemasan premium",
+                  "Legalitas BPOM",
+                ],
+                featured: true,
+              },
+              {
+                title: "Paket Enterprise",
+                description: "Solusi lengkap untuk brand besar",
+                features: [
+                  "MOQ 2000+ pcs",
+                  "Unlimited produk",
+                  "Full custom",
+                  "Brand consultant",
+                  "Marketing support",
+                ],
+              },
+            ].map((pkg, index) => (
+              <Card
+                key={index}
+                className={`relative ${
+                  pkg.featured ? "border-primary shadow-xl" : "border-border"
+                }`}
+              >
+                {pkg.featured && (
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                    <Badge className="bg-accent text-accent-foreground border-0 shadow-md">
+                      ⭐ Paling Populer
+                    </Badge>
+                  </div>
+                )}
+                <CardHeader className="text-center pb-4">
+                  <CardTitle className="text-2xl">{pkg.title}</CardTitle>
+                  <CardDescription className="text-base">
+                    {pkg.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <ul className="space-y-2">
+                    {pkg.features.map((feature, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-2 text-sm text-muted-foreground"
+                      >
+                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="pt-4 space-y-2">
+                    <p className="text-center text-sm text-muted-foreground">
+                      Butuh penawaran harga?
+                    </p>
+                    <Button
+                      variant="whatsapp"
+                      className="w-full"
+                      onClick={openWhatsApp}
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      Tanya via WhatsApp
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -895,110 +994,6 @@ const Index = () => {
                 );
               })}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Packages Section */}
-      <section className="py-16 md:py-20 bg-secondary/20" id="packages">
-        <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-12">
-            <Badge className="bg-accent/20 text-accent-foreground border-accent/40">
-              📦 Layanan Kami
-            </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Paket <span className="text-primary">Lengkap & Fleksibel</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Pilih layanan sesuai kebutuhan bisnis Anda
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {[
-              {
-                title: "Paket Starter",
-                description:
-                  "Cocok untuk pemula yang baru memulai bisnis kosmetik",
-                features: [
-                  "MOQ 500 pcs",
-                  "1 Jenis produk",
-                  "Konsultasi formula",
-                  "Sample gratis",
-                  "Kemasan basic",
-                ],
-              },
-              {
-                title: "Paket Professional",
-                description: "Untuk brand yang ingin berkembang lebih cepat",
-                features: [
-                  "MOQ 1000 pcs",
-                  "2-3 Jenis produk",
-                  "Custom formula",
-                  "Desain kemasan premium",
-                  "Legalitas BPOM",
-                ],
-                featured: true,
-              },
-              {
-                title: "Paket Enterprise",
-                description: "Solusi lengkap untuk brand besar",
-                features: [
-                  "MOQ 2000+ pcs",
-                  "Unlimited produk",
-                  "Full custom",
-                  "Brand consultant",
-                  "Marketing support",
-                ],
-              },
-            ].map((pkg, index) => (
-              <Card
-                key={index}
-                className={`relative ${
-                  pkg.featured ? "border-primary shadow-xl" : "border-border"
-                }`}
-              >
-                {pkg.featured && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <Badge className="bg-accent text-accent-foreground border-0 shadow-md">
-                      ⭐ Paling Populer
-                    </Badge>
-                  </div>
-                )}
-                <CardHeader className="text-center pb-4">
-                  <CardTitle className="text-2xl">{pkg.title}</CardTitle>
-                  <CardDescription className="text-base">
-                    {pkg.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <ul className="space-y-2">
-                    {pkg.features.map((feature, i) => (
-                      <li
-                        key={i}
-                        className="flex items-start gap-2 text-sm text-muted-foreground"
-                      >
-                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="pt-4 space-y-2">
-                    <p className="text-center text-sm text-muted-foreground">
-                      Butuh penawaran harga?
-                    </p>
-                    <Button
-                      variant="whatsapp"
-                      className="w-full"
-                      onClick={openWhatsApp}
-                    >
-                      <MessageCircle className="h-4 w-4" />
-                      Tanya via WhatsApp
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
