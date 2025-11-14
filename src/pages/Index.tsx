@@ -256,7 +256,7 @@ const Index = () => {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="space-y-6 text-center lg:text-left">
               <Badge className="bg-accent text-accent-foreground border-0 text-sm px-4 py-1.5">
-                ✨ Peluang Bisnis 2024
+                ✨ Peluang Bisnis 2025
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
                 Mulai Brand Kosmetik Sendiri{" "}
