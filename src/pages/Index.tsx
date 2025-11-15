@@ -39,6 +39,8 @@ import stepOne from "/step-1.webp";
 
 import labOne from "/lab-1.webp";
 
+import watermark from "/DAL-logo.png";
+
 const Index = () => {
   const whatsappNumber = "62812321555";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Halo%20Makmur%20Baru%20Global,%20saya%20tertarik%20untuk%20memulai%20brand%20kosmetik%20sendiri`;
@@ -249,6 +251,12 @@ const Index = () => {
           </div>
         </div>
       </nav>
+      <img
+  src={watermark}
+  alt="Watermark"
+  className="pointer-events-none select-none fixed inset-0 w-full h-full object-contain z-50 opacity-10"
+  style={{objectFit: "fit"}}
+/>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-secondary/10">
         <div className="container mx-auto px-4 py-16 md:py-24">
