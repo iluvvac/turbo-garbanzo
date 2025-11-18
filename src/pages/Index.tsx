@@ -252,11 +252,11 @@ const Index = () => {
         </div>
       </nav>
       <img
-  src={watermark}
-  alt="Watermark"
-  className="pointer-events-none select-none fixed inset-0 w-full h-full object-contain z-50 opacity-10"
-  style={{objectFit: "fit"}}
-/>
+        src={watermark}
+        alt="Watermark"
+        className="pointer-events-none select-none fixed inset-0 w-full h-full object-contain z-50 opacity-10"
+        style={{ objectFit: "fit" }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-secondary/10">
         <div className="container mx-auto px-4 py-16 md:py-24">
@@ -266,13 +266,12 @@ const Index = () => {
                 ✨ Peluang Bisnis 2025
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
-                Mulai Brand Kosmetik Sendiri{" "}
-                <span className="text-primary">Tanpa Modal Besar!</span>
+                Mulai Brand Kosmetik Kamu,{" "}
+                <span className="text-primary">Hanya Dengan Rp 5000/pcs!</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
-                Mulai dari 500 pcs, legalitas dan BPOM diurus, produk halal dan
-                aman. Cocok untuk kamu yang baru PHK dan ingin membangun bisnis
-                sendiri!
+                Legalitas dan BPOM diurus, produk halal dan aman. Cocok untuk
+                kamu yang baru PHK dan ingin membangun bisnis sendiri
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button
@@ -300,7 +299,7 @@ const Index = () => {
               <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-sm text-muted-foreground pt-4">
                 <div className="flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-primary" />
-                  <span>MOQ Rendah 500 pcs</span>
+                  <span>MOQ Rendah</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-primary" />
@@ -343,7 +342,7 @@ const Index = () => {
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
                 <span className="text-primary">Baru Aja Kena PHK</span>
                 <br />
-                dan Bingung Harus Kemana?
+                Jangan Sampai Ini Jadi Awal Dari Kehancuran Finansialmu
               </h1>
               {/* <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed">
                 Hilangnya pekerjaan terasa seperti bencana. Penghasilan
@@ -366,13 +365,13 @@ const Index = () => {
                       😰 Kondisi Sekarang
                     </Badge>
                     <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-                      Ingin Coba Bisnis, Tapi...
+                      Mau Bisnis, Tapi Takut Salah Langkah
                     </h3>
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      Kalo cuma tunggu lowongan kerja baru, nggak cukup. Tapi
-                      kalo mau berbisnis harus punya modal yang besar. Gimana
-                      caranya mulai bisnis dengan modal minim tapi tetap
-                      hasilnya bagus?
+                      PHK datang tiba-tiba. Tabungan makin menipis. Lowongan
+                      kerja makin sepi. Kamu tahu kamu butuh cara lain buat
+                      tetap hidup. Tapi bisnis terasa menakutkan: modal besar,
+                      risiko rugi, takut mulai dari nol.
                     </p>
                   </div>
                   <div className="md:order-1">
@@ -400,7 +399,7 @@ const Index = () => {
                       ❓ Bingung
                     </Badge>
                     <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-                      Nggak Tahu Mulai dari Mana
+                      Punya Ide, Tapi Kebingungan Membunuh Aksi
                     </h3>
                     <p className="text-lg text-muted-foreground leading-relaxed">
                       Kalaupun ada ide bisnis, pertanyaan langsung muncul.
@@ -435,12 +434,14 @@ const Index = () => {
                       ✨ Ada Jalannya
                     </Badge>
                     <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-                      Dari Nol Menjadi Brand
+                      Bangun Brand Tanpa Pabrik, Tanpa Ribuan Unit, Tanpa Ribet
                     </h3>
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      Mulai bisnis tanpa pabrik, tanpa ribuan order. Makmur Baru
-                      Global urus semuanya dari formula hingga BPOM. Kamu
-                      tinggal jualan.
+                      Bayangin kamu punya brand sendiri tanpa harus keluar modal
+                      besar. Formula? Beres. Produksi? Diurus. BPOM? Selesai.
+                      <b> Makmur Baru Global</b> yang kerjakan semuanya. Kamu
+                      hanya fokus jualan dan mulai mengejar hidup yang hampir
+                      kamu pikir sudah hilang.
                     </p>
                   </div>
                   <div className="md:order-1">
@@ -682,15 +683,19 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
             <Badge className="bg-primary/10 text-primary border-primary/20">
-              🎯 Solusi Lengkap
+              🎯 Paling Lengkap
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Makmur Baru Global Bantu Semua{" "}
-              <span className="text-primary">dari A-Z</span>
+              <span className="text-primary">
+                Paling Lengkap: Dari Kosong Jadi Brand{" "}
+              </span>
+              <br></br>
+              Tanpa Pusing, Tanpa Ribet, Tanpa Buang Waktu{" "}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Konsultasi, formulasi, sample, legalitas, hingga produksi. Kami
-              dampingi setiap langkah bisnis Anda!
+              Kamu cukup punya niat. Makmur Baru Global yang kerjakan sisanya
+              dari A–Z. Formulasi, sampel, legalitas, produksi — semua beres
+              tanpa kamu harus stres sedikit pun.
             </p>
           </div>
 
@@ -700,30 +705,30 @@ const Index = () => {
                 icon: Package,
                 title: "MOQ Rendah",
                 description:
-                  "Mulai dari 500 pcs saja, cocok untuk pemula yang baru memulai bisnis",
+                  "Mulai dari 500 pcs saja, cocok buat yang baru mulai, modal minim, tapi mau langsung punya produk yang layak masuk pasar.",
               },
               {
                 icon: Shield,
                 title: "Legalitas BPOM",
                 description:
-                  "Kami urus semua legalitas dan sertifikasi BPOM produk Anda",
+                  "Semua diuruskan, nggak paham regulasi? Tenang, kami yang urus sampai produk kamu resmi & aman dijual",
               },
               {
                 icon: Award,
-                title: "Produk Halal",
+                title: "100% Halal",
                 description:
-                  "Semua produk dijamin halal dan aman untuk konsumen Muslim",
+                  "Aman untuk Pasar Muslim. Produk halal = pasar lebih luas = potensi omzet makin besar.",
               },
               {
                 icon: Sparkles,
-                title: "Inovasi Tren",
+                title: "Formula Kekinian Sesuai Tren",
                 description:
-                  "Formula terkini mengikuti tren pasar kosmetik Indonesia",
+                  "Kami pakai formula yang mengikuti tren kecantikan Indonesia. Jangan sampai kamu jual produk yang sudah ketinggalan zaman",
               },
               {
                 icon: Clock,
-                title: "Proses Cepat",
-                description: "Dari konsultasi hingga produksi hanya 4-6 minggu",
+                title: "Lebih Cepat dari Gaji Turun",
+                description: "Bisnis kamu nggak perlu nunggu berbulan-bulan. Yang lambat akan kalah, yang cepat akan panen duluan",
               },
               {
                 icon: TrendingUp,
@@ -1610,7 +1615,7 @@ const Index = () => {
                 </div>
               </div>
               <div className="mt-8 text-sm text-background/60 text-center">
-                © 2024 PT Makmur Baru Global. All rights reserved.
+                © 2025 PT Makmur Baru Global. All rights reserved.
               </div>
             </div>
           </div>
